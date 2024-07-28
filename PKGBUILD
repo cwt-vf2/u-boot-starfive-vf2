@@ -1,7 +1,7 @@
 # Maintainer: Chaiwat Suttipongsakul <cwt@bashell.com>
 
 pkgname=u-boot-starfive-vf2
-pkgver=2024.04
+pkgver=2024.07
 pkgrel=1
 pkgdesc='U-Boot for StarFive RISC-V VisionFive 2 Board'
 _tag=v${pkgver}
@@ -13,7 +13,7 @@ makedepends=(gcc swig opensbi-6.6-starfive-vf2)
 options=('!strip')
 source=("${url}archive/refs/tags/${_tag}.tar.gz")
 
-sha256sums=('d6b57ce574a0a0504a5b6596644ceacb7f77bde9353779bcf2fde07c4b9a2b92')
+sha256sums=('b7f6137acc89e4a939075600de3a04cc3a8602fa936194c27bd9a14005bc61fd')
 
 
 prepare() {
