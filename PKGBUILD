@@ -2,14 +2,14 @@
 
 pkgname=u-boot-starfive-vf2
 pkgver=2024.07
-pkgrel=1
+pkgrel=2
 pkgdesc='U-Boot for StarFive RISC-V VisionFive 2 Board'
 _tag=v${pkgver}
 _srcname=u-boot-$pkgver
 url="https://github.com/u-boot/u-boot/"
 arch=(riscv64)
 license=('GPL-2.0+')
-makedepends=(gcc swig opensbi-6.6-starfive-vf2)
+makedepends=(gcc swig sed opensbi-6.6-starfive-vf2)
 options=('!strip')
 source=("${url}archive/refs/tags/${_tag}.tar.gz")
 
@@ -21,6 +21,7 @@ prepare() {
   make -j $(nproc) \
     CC="gcc -mcpu=sifive-u74 -mtune=sifive-7-series" \
     starfive_visionfive2_defconfig
+  sed -i -e "s/^# CONFIG_CMD_SYSBOOT is not set$/CONFIG_CMD_SYSBOOT=y/" .config
 }
 
 build() {
