@@ -1,0 +1,11 @@
+--- .config	2025-01-10 16:07:07.339164926 +0700
++++ .config	2025-01-10 16:08:52.651302546 +0700
+@@ -1877,7 +1877,7 @@
+ # CONFIG_MCHP_PIT64B_TIMER is not set
+ # CONFIG_IMX_GPT_TIMER is not set
+ # CONFIG_XILINX_TIMER is not set
+-# CONFIG_STARFIVE_TIMER is not set
++CONFIG_STARFIVE_TIMER=y
+ 
+ #
+ # TPM support
