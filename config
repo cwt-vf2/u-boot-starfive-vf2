@@ -4,7 +4,7 @@
 #
 
 #
-# Compiler: gcc (GCC) 15.2.1 20250813
+# Compiler: gcc (GCC) 15.2.1 20251112
 #
 CONFIG_CREATE_ARCH_SYMLINK=y
 CONFIG_HAVE_SETJMP=y
@@ -905,7 +905,7 @@ CONFIG_OF_SEPARATE=y
 CONFIG_OF_BOARD=y
 # CONFIG_OF_OMIT_DTB is not set
 CONFIG_DEVICE_TREE_INCLUDES=""
-CONFIG_OF_LIST="starfive/jh7110-deepcomputing-fml13v01 starfive/jh7110-milkv-mars starfive/jh7110-pine64-star64 starfive/jh7110-starfive-visionfive-2-v1.2a starfive/jh7110-starfive-visionfive-2-v1.3b"
+CONFIG_OF_LIST="starfive/jh7110-deepcomputing-fml13v01 starfive/jh7110-milkv-mars starfive/jh7110-pine64-star64 starfive/jh7110-starfive-visionfive-2-v1.2a starfive/jh7110-starfive-visionfive-2-v1.3b starfive/jh7110s-starfive-visionfive-2-lite"
 CONFIG_OF_OVERLAY_LIST=""
 # CONFIG_MULTI_DTB_FIT_LZO is not set
 # CONFIG_MULTI_DTB_FIT_GZIP is not set
@@ -913,7 +913,7 @@ CONFIG_MULTI_DTB_FIT_NO_COMPRESSION=y
 # CONFIG_DTB_RESELECT is not set
 CONFIG_MULTI_DTB_FIT=y
 # CONFIG_SPL_MULTI_DTB_FIT is not set
-CONFIG_SPL_OF_LIST="starfive/jh7110-deepcomputing-fml13v01 starfive/jh7110-milkv-mars starfive/jh7110-pine64-star64 starfive/jh7110-starfive-visionfive-2-v1.2a starfive/jh7110-starfive-visionfive-2-v1.3b"
+CONFIG_SPL_OF_LIST="starfive/jh7110-deepcomputing-fml13v01 starfive/jh7110-milkv-mars starfive/jh7110-pine64-star64 starfive/jh7110-starfive-visionfive-2-v1.2a starfive/jh7110-starfive-visionfive-2-v1.3b starfive/jh7110s-starfive-visionfive-2-lite"
 CONFIG_OF_TAG_MIGRATE=y
 CONFIG_OF_SPL_REMOVE_PROPS="interrupt-parent interrupts"
 # CONFIG_OF_DTB_PROPS_REMOVE is not set
